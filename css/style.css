@@ -9,8 +9,13 @@
 	border-style: solid;
 	border-width: 5px;
 	border-color: black;
-	min-width: 680px;
+	min-width: 800px;
 	min-height: 600px;
+	text-align: center;
+}
+
+.container canvas {
+	z-index: -1;
 }
 
 .title {
@@ -22,11 +27,12 @@
 .title h1 {
 	font-family: 'walibi';
 	text-align: center;
-	color: yellow;
-	font-size: 40px;
-	-webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+	color: rgba(170,170,170,1);
+	font-size: 44px;
+	-webkit-text-fill-color: rgba(170,170,170,1); /* Will override color (regardless of order) */
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: black;
+	text-shadow: 5px 2px 6px rgba(150, 150, 150, 1);
 }
 
 .container p {
@@ -37,11 +43,27 @@
 	font-family: 'walibi';	
 }
 
-.container img {
+.container-image {
+	
+}
+
+.container-image img {
 	position: absolute;
 	left: 0px;
 	bottom: 0px;
-    z-index: 1;
+	z-index: 0;
+	width: 28%;
+	margin-left: 15px;
+	height: auto;
+}
+
+.buttonimage {
+	background-image: url("../img/logo.png");
+
+}
+
+.container button {
+	z-index: 2;
 }
 
 
