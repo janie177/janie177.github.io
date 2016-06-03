@@ -1,0 +1,64 @@
+.container {
+	width: 60%;
+	height: 65%;
+	background-color: white;
+	margin-left: 20%;
+	margin-right: 20%;
+	position: absolute;
+	margin-top: 10%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
+	min-width: 680px;
+	min-height: 600px;
+}
+
+.title {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.title h1 {
+	font-family: 'walibi';
+	text-align: center;
+	color: yellow;
+	font-size: 40px;
+	-webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+}
+
+.container p {
+	color: black;
+	text-align: center;
+	margin-top: 100px;
+	font-size: 50px;
+	font-family: 'walibi';	
+}
+
+.container img {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+    z-index: 1;
+}
+
+
+@font-face {
+	font-family: 'Open-Sans';
+	src: url("fonts/OpenSans.ttf");
+}
+
+@font-face {
+	font-family: 'walibi';
+	src: url("fonts/walibi.ttf");
+}
+
+body {
+	background-color: rgba(30, 30, 30,100);
+	background-image: url("../img/background.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin: 0;
+}
